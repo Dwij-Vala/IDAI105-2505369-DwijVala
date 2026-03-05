@@ -2,11 +2,15 @@
 
 ## Student Information
 
-**Student Name:** Dwij Vala
-**Student ID:** 2505369
-**CRS:** Artificial Intelligence
-**Course:** Data Mining
-**School:** Udgam School for Children
+**Student Name:** Dwij Vala 
+
+**Student ID:** 2505369 
+
+**CRS:** Artificial Intelligence 
+
+**Course:** Data Mining 
+
+**School:** Udgam School for Children 
 
 ---
 
@@ -22,9 +26,7 @@ The project is deployed as an interactive web application using **Streamlit Clou
 
 ### Live Application Link
 
-Paste your Streamlit app link here after deployment:
-
-https://your-streamlit-app-link.streamlit.app
+https://ev-charging-analytics.streamlit.app/
 
 This dashboard allows users to explore EV charging data, visualize usage patterns, detect anomalies, and understand charging behavior across stations.
 
