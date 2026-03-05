@@ -32,134 +32,133 @@ This dashboard allows users to explore EV charging data, visualize usage pattern
 
 ---
 
-# Project Overview
+# Project Scope and Objectives
 
-This project analyzes Electric Vehicle (EV) charging station data using **data mining techniques** to uncover usage patterns, station performance, and abnormal behaviors.
+Electric vehicles are becoming increasingly popular worldwide, making efficient charging infrastructure critical. This project analyzes EV charging station data to identify patterns in station usage and operational performance.
 
-The goal is to use artificial intelligence and data analytics techniques to help improve EV charging infrastructure and decision-making for charging station providers.
+### Objectives
 
-The project applies several data mining methods including:
-
-* Data preprocessing
-* Exploratory data analysis (EDA)
-* Clustering analysis
-* Association rule mining
-* Anomaly detection
-* Interactive dashboard visualization using Streamlit
+* Understand EV charging demand patterns
+* Analyze relationships between charging cost and station usage
+* Identify groups of charging stations with similar behavior using clustering
+* Detect unusual charging stations through anomaly detection
+* Discover hidden relationships between station characteristics using association rule mining
+* Present insights through an interactive Streamlit dashboard
 
 ---
 
 # Dataset Description
 
-The dataset contains information about EV charging stations including:
+The dataset used in this project contains detailed information about EV charging stations, including:
 
 * Station ID
 * Latitude and Longitude
 * Charger Type
-* Charging Capacity
-* Charging Cost (USD/kWh)
-* Distance to City
-* Usage Statistics (Average users per day)
+* Charging Capacity (kW)
+* Cost (USD/kWh)
+* Distance to City (km)
+* Average Usage Statistics (Users per Day)
 * Station Operator
 * Renewable Energy Source
 * Reviews / Ratings
 
-This data helps analyze station demand, efficiency, and usage patterns.
+These variables help analyze station demand, operational efficiency, and charging behavior.
 
 ---
 
-# Data Preprocessing
+# Data Preparation and Preprocessing
 
-Before analysis, the dataset was cleaned and prepared.
+Before performing analysis, the dataset was cleaned and prepared.
 
-The preprocessing steps include:
+### Steps Performed
 
 * Handling missing values
-* Filtering dataset values using user controls
-* Scaling numerical data using **StandardScaler**
-* Converting categorical variables into binary variables for association rule mining
+* Filtering and validating dataset entries
+* Scaling numerical features using **StandardScaler**
+* Converting categorical variables to binary values for association rule mining
 
-These steps ensure the dataset is ready for machine learning analysis.
+These preprocessing steps ensure that the dataset is suitable for machine learning algorithms and data mining techniques.
 
 ---
 
 # Exploratory Data Analysis (EDA)
 
-Several visualizations were created to better understand the dataset.
+Exploratory Data Analysis was performed to understand trends and relationships within the dataset.
 
-Examples include:
+### Visualizations Created
 
-* Histogram showing EV charging demand distribution
-* Scatter plot comparing charging cost and station usage
-* Correlation heatmap for numerical features
+* Histogram of charging station demand
+* Scatter plot of charging cost vs usage
+* Correlation heatmap of numerical variables
 
-EDA helps identify trends, patterns, and relationships in the data.
+EDA helps reveal patterns and insights before applying advanced machine learning techniques.
 
 ---
 
 # Clustering Analysis
 
-The **K-Means clustering algorithm** was used to group EV charging stations based on usage patterns.
+The **K-Means clustering algorithm** was used to group charging stations based on similar usage characteristics.
 
-Features used for clustering:
+### Features Used for Clustering
 
-* Average users per day
+* Usage statistics (average users per day)
 * Charging cost
 * Charging capacity
 * Distance to city
 
-This clustering identifies groups of stations such as:
+### Insights from Clustering
 
-* High demand stations
-* Moderate demand stations
-* Low usage stations
+The algorithm identified different groups of stations such as:
 
-These insights help understand different station usage behaviors.
+* High demand charging stations
+* Medium usage stations
+* Low demand stations
+
+This segmentation helps understand station utilization patterns.
 
 ---
 
 # Anomaly Detection
 
-**Isolation Forest** was used to detect unusual or abnormal stations.
+The **Isolation Forest algorithm** was applied to detect abnormal charging stations.
 
-Anomalies may represent:
+### Possible Anomalies
 
 * Stations with unusually high demand
 * Stations with extremely low usage
-* Possible technical issues
-* Potential data errors
+* Possible technical or operational issues
 
-Detecting anomalies helps improve monitoring and maintenance of charging infrastructure.
+Anomaly detection helps identify potential problems within the charging network.
 
 ---
 
 # Association Rule Mining
 
-Association rule mining was implemented using the **Apriori algorithm**.
+Association rule mining was performed using the **Apriori algorithm** to identify relationships between station characteristics.
 
-This technique identifies relationships between station characteristics.
-
-Example insights include:
-
-* Certain charger types may correlate with higher usage
-* Renewable energy stations may attract more users
-
-The algorithm evaluates rules using:
+### Metrics Used
 
 * Support
 * Confidence
 * Lift
 
+### Example Insights
+
+* Certain charger types may correlate with higher demand
+* Stations with renewable energy may attract more users
+
+Association rules help uncover hidden relationships within the dataset.
+
 ---
 
 # Streamlit Dashboard Features
 
-The project includes a fully interactive **Streamlit dashboard**.
+The Streamlit application provides an interactive interface for exploring the analysis.
 
-Main features include:
+### Dashboard Features
 
 * Dataset preview
-* Interactive filtering
+* Interactive filters
 * Exploratory data visualizations
 * Clustering analysis
 * Anomaly detection
@@ -168,7 +167,7 @@ Main features include:
 * Station ranking and insights
 * Download processed dataset
 
-The dashboard allows users to explore EV charging patterns interactively.
+The dashboard enables users to explore EV charging patterns dynamically.
 
 ---
 
@@ -187,8 +186,9 @@ IDAI105-2505369-DwijVala
 
 # Technologies Used
 
-This project uses several Python libraries:
+This project was implemented using the following technologies:
 
+* Python
 * Streamlit
 * Pandas
 * NumPy
@@ -199,20 +199,20 @@ This project uses several Python libraries:
 * MLxtend
 * Folium
 
-These tools support data analysis, machine learning, and interactive visualization.
+These tools enable data analysis, machine learning, and interactive visualization.
 
 ---
 
 # Key Insights
 
-Some key insights obtained from the analysis include:
+Key findings from the analysis include:
 
-* Certain charging stations show significantly higher demand.
-* Charging cost influences the number of users.
-* Geographic location plays a major role in charging demand.
-* Some stations show abnormal patterns requiring further investigation.
+* Some charging stations experience significantly higher usage compared to others.
+* Charging cost can influence user demand.
+* Geographic location plays an important role in station utilization.
+* Certain stations show unusual behavior that may require further investigation.
 
-These insights can support better EV infrastructure planning.
+These insights can help optimize EV charging infrastructure planning.
 
 ---
 
@@ -221,7 +221,7 @@ These insights can support better EV infrastructure planning.
 Data Visualization Resources
 https://www.data-to-viz.com/
 
-K-Means Clustering Explanation
+K-Means Clustering Guide
 https://neptune.ai/blog/k-means-clustering
 
 Association Rule Mining Guide
